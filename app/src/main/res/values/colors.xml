@@ -16,4 +16,5 @@
     <color name="colorPrimary_grey">#e1dbdb</color>
     <color name="grey">#C1CDCD</color>
     <color name="yellow">#ff7300</color>
+    <color name="bg_keyboard_gray">#d2d5dc</color>
 </resources>

@@ -11,7 +11,7 @@
         android:layout_height="50dp"
         android:layout_centerHorizontal="true" />
 
-    <com.example.xm.widget.MarqueeTextView
+    <com.org.ehome.widget.MarqueeTextView
         android:id="@+id/ItemText"
         android:layout_width="60dp"
         android:layout_height="wrap_content"

@@ -1,10 +1,10 @@
 
 {
-	"buildFiles" : [ "F:/AndroidStudioWrokPace/xm_PNAE_Mob/app/CMakeLists.txt" ],
+	"buildFiles" : [ "F:/AndroidStudioWrokPace/E_HOME/app/CMakeLists.txt" ],
 	"cFileExtensions" : [ "c" ],
 	"cleanCommands" : 
 	[
-		"D:\\android-sdk\\cmake\\3.6.3155560\\bin\\cmake.exe --build F:\\AndroidStudioWrokPace\\xm_PNAE_Mob\\app\\.externalNativeBuild\\cmake\\release\\arm64-v8a --target clean"
+		"D:\\android-sdk\\cmake\\3.6.3155560\\bin\\cmake.exe --build F:\\AndroidStudioWrokPace\\E_HOME\\app\\.externalNativeBuild\\cmake\\release\\arm64-v8a --target clean"
 	],
 	"libraries" : 
 	{
@@ -12,18 +12,18 @@
 		{
 			"abi" : "arm64-v8a",
 			"artifactName" : "IpPort",
-			"buildCommand" : "D:\\android-sdk\\cmake\\3.6.3155560\\bin\\cmake.exe --build F:\\AndroidStudioWrokPace\\xm_PNAE_Mob\\app\\.externalNativeBuild\\cmake\\release\\arm64-v8a --target IpPort",
+			"buildCommand" : "D:\\android-sdk\\cmake\\3.6.3155560\\bin\\cmake.exe --build F:\\AndroidStudioWrokPace\\E_HOME\\app\\.externalNativeBuild\\cmake\\release\\arm64-v8a --target IpPort",
 			"buildType" : "release",
 			"files" : 
 			[
 				
 				{
 					"flags" : "  -target aarch64-none-linux-android -gcc-toolchain D:/android-sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/windows-x86_64 --sysroot=D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64 -DIpPort_EXPORTS  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG -O2 -DNDEBUG  -fPIC      -c ",
-					"src" : "F:/AndroidStudioWrokPace/xm_PNAE_Mob/app/src/main/jni/com_example_xm_util_GetIpPort.c",
-					"workingDirectory" : "F:/AndroidStudioWrokPace/xm_PNAE_Mob/app/.externalNativeBuild/cmake/release/arm64-v8a"
+					"src" : "F:/AndroidStudioWrokPace/E_HOME/app/src/main/jni/com_org_ehome_util_GetIpPort.c",
+					"workingDirectory" : "F:/AndroidStudioWrokPace/E_HOME/app/.externalNativeBuild/cmake/release/arm64-v8a"
 				}
 			],
-			"output" : "F:/AndroidStudioWrokPace/xm_PNAE_Mob/app/build/intermediates/cmake/release/obj/arm64-v8a/libIpPort.so",
+			"output" : "F:/AndroidStudioWrokPace/E_HOME/app/build/intermediates/cmake/release/obj/arm64-v8a/libIpPort.so",
 			"toolchain" : "2064229213"
 		}
 	},

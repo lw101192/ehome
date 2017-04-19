@@ -18,14 +18,14 @@ public class MessageBean implements Serializable {
     private ContentBean content;
     private List<ConfigBean> configs;
     private String useragent;
-    private int ackcode;
+    private ResultBean result;
 
-    public int getAckcode() {
-        return ackcode;
+    public ResultBean getResult() {
+        return result;
     }
 
-    public void setAckcode(int ackcode) {
-        this.ackcode = ackcode;
+    public void setResult(ResultBean result) {
+        this.result = result;
     }
 
     public long getTotallength() {

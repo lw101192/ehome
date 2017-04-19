@@ -1,18 +1,10 @@
 [
     {
-        "merged": "F:\\AndroidStudioWrokPace\\xm_PNAE_Mob\\pullrefreshlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\pull_to_refresh_header_horizontal.xml",
-        "source": "F:\\AndroidStudioWrokPace\\xm_PNAE_Mob\\pullrefreshlibrary\\build\\intermediates\\bundles\\debug\\res\\layout\\pull_to_refresh_header_horizontal.xml"
+        "merged": "F:\\AndroidStudioWrokPace\\E_HOME\\pullrefreshlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\pull_to_refresh_header_vertical.xml",
+        "source": "F:\\AndroidStudioWrokPace\\E_HOME\\pullrefreshlibrary\\build\\intermediates\\bundles\\debug\\res\\layout\\pull_to_refresh_header_vertical.xml"
     },
     {
-        "merged": "F:\\Androidworkspace\\xm_PNAE_Mob\\pullrefreshlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\pull_to_refresh_header_horizontal.xml",
-        "source": "F:\\Androidworkspace\\xm_PNAE_Mob\\pullrefreshlibrary\\build\\intermediates\\bundles\\debug\\res\\layout\\pull_to_refresh_header_horizontal.xml"
-    },
-    {
-        "merged": "F:\\AndroidStudioWrokPace\\xm_PNAE_Mob\\pullrefreshlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\pull_to_refresh_header_vertical.xml",
-        "source": "F:\\AndroidStudioWrokPace\\xm_PNAE_Mob\\pullrefreshlibrary\\build\\intermediates\\bundles\\debug\\res\\layout\\pull_to_refresh_header_vertical.xml"
-    },
-    {
-        "merged": "F:\\Androidworkspace\\xm_PNAE_Mob\\pullrefreshlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\pull_to_refresh_header_vertical.xml",
-        "source": "F:\\Androidworkspace\\xm_PNAE_Mob\\pullrefreshlibrary\\build\\intermediates\\bundles\\debug\\res\\layout\\pull_to_refresh_header_vertical.xml"
+        "merged": "F:\\AndroidStudioWrokPace\\E_HOME\\pullrefreshlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\pull_to_refresh_header_horizontal.xml",
+        "source": "F:\\AndroidStudioWrokPace\\E_HOME\\pullrefreshlibrary\\build\\intermediates\\bundles\\debug\\res\\layout\\pull_to_refresh_header_horizontal.xml"
     }
 ]

@@ -64,5 +64,5 @@ endif()
 
 
 set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "stdc++;m;dl;c;dl")
-set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "D:/android-sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/windows-x86_64/lib/gcc/mipsel-linux-android/4.9.x;D:/android-sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/windows-x86_64/mipsel-linux-android/lib;D:/android-sdk/ndk-bundle/platforms/android-9/arch-mips/usr/lib")
+set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "D:/android-sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/windows-x86_64/lib/gcc/mipsel-linux-android/4.9.x;D:/android-sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/windows-x86_64/mipsel-linux-android/lib;D:/android-sdk/ndk-bundle/platforms/android-14/arch-mips/usr/lib")
 set(CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")

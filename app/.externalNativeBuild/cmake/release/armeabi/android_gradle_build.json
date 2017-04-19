@@ -1,10 +1,10 @@
 
 {
-	"buildFiles" : [ "F:/AndroidStudioWrokPace/xm_PNAE_Mob/app/CMakeLists.txt" ],
+	"buildFiles" : [ "F:/AndroidStudioWrokPace/E_HOME/app/CMakeLists.txt" ],
 	"cFileExtensions" : [ "c" ],
 	"cleanCommands" : 
 	[
-		"D:\\android-sdk\\cmake\\3.6.3155560\\bin\\cmake.exe --build F:\\AndroidStudioWrokPace\\xm_PNAE_Mob\\app\\.externalNativeBuild\\cmake\\release\\armeabi --target clean"
+		"D:\\android-sdk\\cmake\\3.6.3155560\\bin\\cmake.exe --build F:\\AndroidStudioWrokPace\\E_HOME\\app\\.externalNativeBuild\\cmake\\release\\armeabi --target clean"
 	],
 	"libraries" : 
 	{
@@ -12,18 +12,18 @@
 		{
 			"abi" : "armeabi",
 			"artifactName" : "IpPort",
-			"buildCommand" : "D:\\android-sdk\\cmake\\3.6.3155560\\bin\\cmake.exe --build F:\\AndroidStudioWrokPace\\xm_PNAE_Mob\\app\\.externalNativeBuild\\cmake\\release\\armeabi --target IpPort",
+			"buildCommand" : "D:\\android-sdk\\cmake\\3.6.3155560\\bin\\cmake.exe --build F:\\AndroidStudioWrokPace\\E_HOME\\app\\.externalNativeBuild\\cmake\\release\\armeabi --target IpPort",
 			"buildType" : "release",
 			"files" : 
 			[
 				
 				{
-					"flags" : "  -target armv5te-none-linux-androideabi -gcc-toolchain D:/android-sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=D:/android-sdk/ndk-bundle/platforms/android-9/arch-arm -DIpPort_EXPORTS  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv5te -mtune=xscale -msoft-float -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv5te -mtune=xscale -msoft-float -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Os -DNDEBUG -Os -DNDEBUG  -fPIC      -c ",
-					"src" : "F:/AndroidStudioWrokPace/xm_PNAE_Mob/app/src/main/jni/com_example_xm_util_GetIpPort.c",
-					"workingDirectory" : "F:/AndroidStudioWrokPace/xm_PNAE_Mob/app/.externalNativeBuild/cmake/release/armeabi"
+					"flags" : "  -target armv5te-none-linux-androideabi -gcc-toolchain D:/android-sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm -DIpPort_EXPORTS  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv5te -mtune=xscale -msoft-float -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv5te -mtune=xscale -msoft-float -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Os -DNDEBUG -Os -DNDEBUG  -fPIC      -c ",
+					"src" : "F:/AndroidStudioWrokPace/E_HOME/app/src/main/jni/com_org_ehome_util_GetIpPort.c",
+					"workingDirectory" : "F:/AndroidStudioWrokPace/E_HOME/app/.externalNativeBuild/cmake/release/armeabi"
 				}
 			],
-			"output" : "F:/AndroidStudioWrokPace/xm_PNAE_Mob/app/build/intermediates/cmake/release/obj/armeabi/libIpPort.so",
+			"output" : "F:/AndroidStudioWrokPace/E_HOME/app/build/intermediates/cmake/release/obj/armeabi/libIpPort.so",
 			"toolchain" : "2064229213"
 		}
 	},

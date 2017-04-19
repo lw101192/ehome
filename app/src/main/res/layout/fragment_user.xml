@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#efeff4"
-    tools:context="com.example.xm.fragment.UserFragment">
+    tools:context="com.org.ehome.fragment.UserFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <ScrollView
@@ -106,13 +106,15 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="0dp"
                                 android:layout_weight="1"
-                                android:src="@drawable/ic_repair" />
+                                android:src="@drawable/ic_repair"
+                                android:visibility="gone"/>
 
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="0dp"
                                 android:layout_weight="1"
-                                android:src="@drawable/ic_feedback" />
+                                android:src="@drawable/ic_feedback"
+                                android:visibility="gone" />
 
                             <ImageView
                                 android:layout_width="wrap_content"
@@ -124,7 +126,8 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="0dp"
                                 android:layout_weight="1"
-                                android:src="@drawable/ic_version" />
+                                android:src="@drawable/ic_version"
+                                android:visibility="gone" />
                         </LinearLayout>
 
                         <android.support.v7.widget.LinearLayoutCompat
@@ -156,7 +159,8 @@
                                 android:gravity="left|center_vertical"
                                 android:paddingLeft="15dp"
                                 android:text="报修"
-                                android:textSize="30sp" />
+                                android:textSize="30sp"
+                                android:visibility="gone" />
 
                             <Button
                                 android:id="@+id/feedback"
@@ -168,7 +172,8 @@
                                 android:gravity="left|center_vertical"
                                 android:paddingLeft="15dp"
                                 android:text="反馈"
-                                android:textSize="30sp" />
+                                android:textSize="30sp"
+                                android:visibility="gone"/>
 
 
                             <Button
@@ -186,7 +191,8 @@
                             <RelativeLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:gravity="center_vertical">
+                                android:gravity="center_vertical"
+                                android:visibility="gone">
 
                                 <Button
                                     android:id="@+id/update"
@@ -197,7 +203,8 @@
                                     android:gravity="left|center_vertical"
                                     android:paddingLeft="15dp"
                                     android:text="当前版本"
-                                    android:textSize="30sp" />
+                                    android:textSize="30sp"
+                                    android:visibility="gone"/>
 
                                 <TextView
                                     android:id="@+id/version"
@@ -208,7 +215,8 @@
                                     android:paddingRight="40dp"
                                     android:text="2.0.1"
                                     android:textColor="@color/red"
-                                    android:textSize="25sp" />
+                                    android:textSize="25sp"
+                                    android:visibility="gone"/>
 
                             </RelativeLayout>
 

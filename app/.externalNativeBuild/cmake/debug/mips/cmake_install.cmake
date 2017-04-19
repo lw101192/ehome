@@ -1,4 +1,4 @@
-# Install script for directory: F:/AndroidStudioWrokPace/xm_PNAE_Mob/app
+# Install script for directory: F:/AndroidStudioWrokPace/E_HOME/app
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "F:/AndroidStudioWrokPace/xm_PNAE_Mob/app/.externalNativeBuild/cmake/debug/mips/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "F:/AndroidStudioWrokPace/E_HOME/app/.externalNativeBuild/cmake/debug/mips/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

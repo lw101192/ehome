@@ -12,26 +12,27 @@ import android.widget.Toast;
 
 import org.apache.mina.core.future.ConnectFuture;
 import org.apache.mina.core.service.IoConnector;
-import org.apache.mina.core.session.IdleStatus;
 import org.apache.mina.core.session.IoSession;
 import org.apache.mina.filter.codec.ProtocolCodecFilter;
-import org.apache.mina.filter.keepalive.KeepAliveFilter;
+import org.apache.mina.filter.codec.prefixedstring.PrefixedStringCodecFactory;
+import org.apache.mina.filter.codec.textline.TextLineCodecFactory;
 import org.apache.mina.filter.keepalive.KeepAliveMessageFactory;
-import org.apache.mina.filter.keepalive.KeepAliveRequestTimeoutHandler;
 import org.apache.mina.transport.socket.nio.NioSocketConnector;
 
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.InetSocketAddress;
 import java.net.Socket;
+import java.nio.charset.Charset;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-import com.example.xm.activities.MainActivity;
-import com.example.xm.bean.StaticVar;
-import com.example.xm.fragment.UserFragment;
-import com.example.xm.thread.ReLoginThread;
-import com.example.xm.util.GetIpPort;
+import com.google.gson.Gson;
+import com.org.ehome.activities.MainActivity;
+import com.org.ehome.bean.StaticVar;
+import com.org.ehome.fragment.UserFragment;
+import com.org.ehome.thread.ReLoginThread;
+import com.org.ehome.util.GetIpPort;
 import com.xm.Bean.ContentBean;
 import com.xm.Bean.MessageBean;
 import com.xm.Bean.UserBean;
@@ -43,11 +44,7 @@ import com.xm.Bean.UserBean;
 public class Client {
     public static final String TAG = "Client";
     private static Client instance = null;
-    public Socket Client_Socket = null;
-    public ObjectInputStream Client_in = null;
-    public ObjectOutputStream Client_out = null;
     private ExecutorService executor = Executors.newCachedThreadPool();
-    private ExecutorService mainQuene = Executors.newSingleThreadExecutor();
     private Context context;
     private boolean isServerIsConnected = false;
     private boolean isLogin = false;
@@ -122,17 +119,19 @@ public class Client {
             GetIpPort getIpPort = new GetIpPort();
             conn = new NioSocketConnector();
             conn.setConnectTimeoutMillis(5000L);
-            conn.getFilterChain().addLast("code", new ProtocolCodecFilter(new MyObjectSerializationCodecFactory()));
+            TextLineCodecFactory codecFactory = new TextLineCodecFactory(Charset.forName( "UTF-8" ));
+		    codecFactory.setDecoderMaxLineLength(1024*1024);
+            conn.getFilterChain().addLast("codec", new ProtocolCodecFilter(codecFactory));
 
-            KeepAliveMessageFactory keepAliveMessageFactory = new KeepAliveMessageFactoryImpl();
-//            KeepAliveRequestTimeoutHandlerImpl keepAliveRequestTimeoutHandlerImpl = new KeepAliveRequestTimeoutHandlerImpl();
-            KeepAliveFilter keepAliveFilter = new KeepAliveFilter(keepAliveMessageFactory, IdleStatus.BOTH_IDLE, KeepAliveRequestTimeoutHandler.CLOSE);
-
-
-            keepAliveFilter.setForwardEvent(true);
-            keepAliveFilter.setRequestInterval(HEARTBEATRATE);
-            keepAliveFilter.setRequestTimeout(20);
-            conn.getFilterChain().addLast("heartbeat", keepAliveFilter);
+//            KeepAliveMessageFactory keepAliveMessageFactory = new KeepAliveMessageFactoryImpl();
+////            KeepAliveRequestTimeoutHandlerImpl keepAliveRequestTimeoutHandlerImpl = new KeepAliveRequestTimeoutHandlerImpl();
+//            KeepAliveFilter keepAliveFilter = new KeepAliveFilter(keepAliveMessageFactory, IdleStatus.BOTH_IDLE, KeepAliveRequestTimeoutHandler.CLOSE);
+//
+//
+//            keepAliveFilter.setForwardEvent(true);
+//            keepAliveFilter.setRequestInterval(HEARTBEATRATE);
+//            keepAliveFilter.setRequestTimeout(20);
+//            conn.getFilterChain().addLast("heartbeat", keepAliveFilter);
 
             conn.setHandler(new ClientHandler());
 //            conn.getSessionConfig().setIdleTime(IdleStatus.BOTH_IDLE,10);
@@ -220,7 +219,7 @@ public class Client {
 
     private void _login(final MessageBean messageBean, final ClientCallBack callBack, final boolean autoLogin) {
         System.out.println("_login");
-
+        System.out.println(new Gson().toJson(messageBean));
         this.callBack = callBack;
         this.excute(new Runnable() {
             @Override
@@ -231,7 +230,7 @@ public class Client {
                 }
 
                 if (session != null)
-                    session.write(messageBean);
+                    session.write(new Gson().toJson(messageBean));
 
 
             }
@@ -242,9 +241,10 @@ public class Client {
         isLogin = false;//先置位isLogin，后closeNow(true)
         messageBean.getFrom().setType("mob/snaeii32");
         if (session != null) {
-            session.write(messageBean);
+            session.write(new Gson().toJson(messageBean));
+            System.out.println("closenow" + session.getLocalAddress());
         }
-        System.out.println("closenow" + session.getLocalAddress());
+
         closeNow(true);
 
 
@@ -294,7 +294,6 @@ public class Client {
      * @param requestCallBack
      */
     public void sendRquestForResponse(MessageBean messageBean, boolean shortConnnection, RequestCallBack requestCallBack) {
-        messageBean.getFrom().setType("mob/snaeii32");
         if (isNetworkAvailable(context)) {
             this.shortConnnection = shortConnnection;
             if (shortConnnection) {
@@ -302,16 +301,14 @@ public class Client {
             }
             if (session != null) {
 
-                session.write(messageBean);
+                session.write(new Gson().toJson(messageBean));
             } else {
                 MainActivity.handler.sendEmptyMessage(StaticVar.RELOGIN);
             }
 
             this.requestCallBack = requestCallBack;
         } else {
-            Looper.prepare();
-            Toast.makeText(this.context, "网络异常", Toast.LENGTH_SHORT).show();
-            Looper.loop();
+            MainActivity.handler.sendEmptyMessage(StaticVar.NETWORK_FAULT);
         }
 
 
@@ -325,7 +322,7 @@ public class Client {
                 session = createSession();
                 if (session != null) {
 
-                    session.write(messageBean);
+                    session.write(new Gson().toJson(messageBean));
                 }
                 session.closeNow();
 //            session.getCloseFuture().awaitUninterruptibly();// 等待连接断开
@@ -334,15 +331,13 @@ public class Client {
             } else {
                 if (session != null) {
 
-                    this.session.write(messageBean);
+                    this.session.write(new Gson().toJson(messageBean));
                 } else {
                     MainActivity.handler.sendEmptyMessage(StaticVar.RELOGIN);
                 }
             }
         } else {
-            Looper.prepare();
-            Toast.makeText(this.context, "网络异常", Toast.LENGTH_SHORT).show();
-            Looper.loop();
+            MainActivity.handler.sendEmptyMessage(StaticVar.NETWORK_FAULT);
         }
 
     }

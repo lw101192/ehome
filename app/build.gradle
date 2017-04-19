@@ -4,8 +4,8 @@ android {
     compileSdkVersion 23
     buildToolsVersion "24.0.0"
     defaultConfig {
-        applicationId 'com.example.xm.finebiopane'
-        minSdkVersion 11
+        applicationId 'com.org.ehome'
+        minSdkVersion 14
         targetSdkVersion 22
         versionCode 1
         versionName "1.0.0"

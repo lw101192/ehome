@@ -1,15 +1,15 @@
 Executable : D:\android-sdk\cmake\3.6.3155560\bin\cmake.exe
 arguments : 
--HF:\AndroidStudioWrokPace\xm_PNAE_Mob\app
--BF:\AndroidStudioWrokPace\xm_PNAE_Mob\app\.externalNativeBuild\cmake\debug\armeabi
+-HF:\AndroidStudioWrokPace\E_HOME\app
+-BF:\AndroidStudioWrokPace\E_HOME\app\.externalNativeBuild\cmake\debug\armeabi
 -GAndroid Gradle - Ninja
 -DANDROID_ABI=armeabi
 -DANDROID_NDK=D:\android-sdk\ndk-bundle
--DCMAKE_LIBRARY_OUTPUT_DIRECTORY=F:\AndroidStudioWrokPace\xm_PNAE_Mob\app\build\intermediates\cmake\debug\obj\armeabi
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=F:\AndroidStudioWrokPace\E_HOME\app\build\intermediates\cmake\debug\obj\armeabi
 -DCMAKE_BUILD_TYPE=Debug
 -DCMAKE_MAKE_PROGRAM=D:\android-sdk\cmake\3.6.3155560\bin\ninja.exe
 -DCMAKE_TOOLCHAIN_FILE=D:\android-sdk\ndk-bundle\build\cmake\android.toolchain.cmake
--DANDROID_NATIVE_API_LEVEL=9
+-DANDROID_NATIVE_API_LEVEL=14
 -DCMAKE_CXX_FLAGS=
 jvmArgs : 
 

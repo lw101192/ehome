@@ -1,18 +1,10 @@
 [
     {
-        "merged": "F:\\AndroidStudioWrokPace\\xm_PNAE_Mob\\pullrefreshlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\indicator_bg_bottom.xml",
-        "source": "F:\\AndroidStudioWrokPace\\xm_PNAE_Mob\\pullrefreshlibrary\\build\\intermediates\\bundles\\debug\\res\\drawable\\indicator_bg_bottom.xml"
+        "merged": "F:\\AndroidStudioWrokPace\\E_HOME\\pullrefreshlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\indicator_bg_bottom.xml",
+        "source": "F:\\AndroidStudioWrokPace\\E_HOME\\pullrefreshlibrary\\build\\intermediates\\bundles\\debug\\res\\drawable\\indicator_bg_bottom.xml"
     },
     {
-        "merged": "F:\\Androidworkspace\\xm_PNAE_Mob\\pullrefreshlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\indicator_bg_bottom.xml",
-        "source": "F:\\Androidworkspace\\xm_PNAE_Mob\\pullrefreshlibrary\\build\\intermediates\\bundles\\debug\\res\\drawable\\indicator_bg_bottom.xml"
-    },
-    {
-        "merged": "F:\\Androidworkspace\\xm_PNAE_Mob\\pullrefreshlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\indicator_bg_top.xml",
-        "source": "F:\\Androidworkspace\\xm_PNAE_Mob\\pullrefreshlibrary\\build\\intermediates\\bundles\\debug\\res\\drawable\\indicator_bg_top.xml"
-    },
-    {
-        "merged": "F:\\AndroidStudioWrokPace\\xm_PNAE_Mob\\pullrefreshlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\indicator_bg_top.xml",
-        "source": "F:\\AndroidStudioWrokPace\\xm_PNAE_Mob\\pullrefreshlibrary\\build\\intermediates\\bundles\\debug\\res\\drawable\\indicator_bg_top.xml"
+        "merged": "F:\\AndroidStudioWrokPace\\E_HOME\\pullrefreshlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\indicator_bg_top.xml",
+        "source": "F:\\AndroidStudioWrokPace\\E_HOME\\pullrefreshlibrary\\build\\intermediates\\bundles\\debug\\res\\drawable\\indicator_bg_top.xml"
     }
 ]

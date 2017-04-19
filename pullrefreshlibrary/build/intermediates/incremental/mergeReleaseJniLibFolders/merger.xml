@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="F:\AndroidStudioWrokPace\xm_PNAE_Mob\pullrefreshlibrary\src\main\jniLibs"/></dataSet><dataSet config="release"><source path="F:\AndroidStudioWrokPace\xm_PNAE_Mob\pullrefreshlibrary\build-types\release\jniLibs"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="F:\AndroidStudioWrokPace\E_HOME\pullrefreshlibrary\src\main\jniLibs"/></dataSet><dataSet config="release"><source path="F:\AndroidStudioWrokPace\E_HOME\pullrefreshlibrary\build-types\release\jniLibs"/></dataSet></merger>

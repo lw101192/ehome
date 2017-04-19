@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="F:\Androidworkspace\xm_PNAE_Mob\pullrefreshlibrary\src\main\shaders"/></dataSet><dataSet config="debug"><source path="F:\Androidworkspace\xm_PNAE_Mob\pullrefreshlibrary\build-types\debug\shaders"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="F:\AndroidStudioWrokPace\E_HOME\pullrefreshlibrary\src\main\shaders"/></dataSet><dataSet config="debug"><source path="F:\AndroidStudioWrokPace\E_HOME\pullrefreshlibrary\build-types\debug\shaders"/></dataSet></merger>

@@ -1,26 +1,14 @@
 [
     {
-        "merged": "F:\\AndroidStudioWrokPace\\xm_PNAE_Mob\\pullrefreshlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\indicator_arrow.png",
-        "source": "F:\\AndroidStudioWrokPace\\xm_PNAE_Mob\\pullrefreshlibrary\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\indicator_arrow.png"
+        "merged": "F:\\AndroidStudioWrokPace\\E_HOME\\pullrefreshlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\default_ptr_rotate.png",
+        "source": "F:\\AndroidStudioWrokPace\\E_HOME\\pullrefreshlibrary\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\default_ptr_rotate.png"
     },
     {
-        "merged": "F:\\AndroidStudioWrokPace\\xm_PNAE_Mob\\pullrefreshlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\default_ptr_rotate.png",
-        "source": "F:\\AndroidStudioWrokPace\\xm_PNAE_Mob\\pullrefreshlibrary\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\default_ptr_rotate.png"
+        "merged": "F:\\AndroidStudioWrokPace\\E_HOME\\pullrefreshlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\default_ptr_flip.png",
+        "source": "F:\\AndroidStudioWrokPace\\E_HOME\\pullrefreshlibrary\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\default_ptr_flip.png"
     },
     {
-        "merged": "F:\\Androidworkspace\\xm_PNAE_Mob\\pullrefreshlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\indicator_arrow.png",
-        "source": "F:\\Androidworkspace\\xm_PNAE_Mob\\pullrefreshlibrary\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\indicator_arrow.png"
-    },
-    {
-        "merged": "F:\\AndroidStudioWrokPace\\xm_PNAE_Mob\\pullrefreshlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\default_ptr_flip.png",
-        "source": "F:\\AndroidStudioWrokPace\\xm_PNAE_Mob\\pullrefreshlibrary\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\default_ptr_flip.png"
-    },
-    {
-        "merged": "F:\\Androidworkspace\\xm_PNAE_Mob\\pullrefreshlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\default_ptr_flip.png",
-        "source": "F:\\Androidworkspace\\xm_PNAE_Mob\\pullrefreshlibrary\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\default_ptr_flip.png"
-    },
-    {
-        "merged": "F:\\Androidworkspace\\xm_PNAE_Mob\\pullrefreshlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\default_ptr_rotate.png",
-        "source": "F:\\Androidworkspace\\xm_PNAE_Mob\\pullrefreshlibrary\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\default_ptr_rotate.png"
+        "merged": "F:\\AndroidStudioWrokPace\\E_HOME\\pullrefreshlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\indicator_arrow.png",
+        "source": "F:\\AndroidStudioWrokPace\\E_HOME\\pullrefreshlibrary\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\indicator_arrow.png"
     }
 ]

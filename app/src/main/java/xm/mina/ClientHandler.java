@@ -3,13 +3,14 @@ package xm.mina;
 
 import android.os.Message;
 
-import com.example.xm.activities.MainActivity;
-import com.example.xm.bean.StaticVar;
 
 import org.apache.mina.core.service.IoHandlerAdapter;
 import org.apache.mina.core.session.IdleStatus;
 import org.apache.mina.core.session.IoSession;
 
+import com.google.gson.Gson;
+import com.org.ehome.activities.MainActivity;
+import com.org.ehome.bean.StaticVar;
 import com.xm.Bean.MessageBean;
 
 /**
@@ -18,16 +19,18 @@ import com.xm.Bean.MessageBean;
 public class ClientHandler extends IoHandlerAdapter {
 
     private boolean isKicked = false;
+    Gson mGson = new Gson();
     @Override
     public void exceptionCaught(IoSession session, Throwable cause) throws Exception {
         cause.printStackTrace();
-        System.out.println("exceptionCaught");
+        System.out.println("exceptionCaught"+cause);
     }
 
     @Override
     public void messageReceived(IoSession session, Object message) throws Exception {
             super.messageReceived(session,message);
-        System.out.println("获得服务器传过来的数据");
+        System.out.println("获得服务器传过来的数据"+message.toString());
+        message = mGson.fromJson(message.toString(),MessageBean.class);
         if(message instanceof MessageBean){
             MessageBean messageBean = (MessageBean)message;
             System.out.println("action>>"+messageBean.getAction());
@@ -40,11 +43,10 @@ public class ClientHandler extends IoHandlerAdapter {
 //            System.out.println("文件接收完成");
             switch (messageBean.getAction()){
                 case "login":
-                    System.out.println("messageBean.getAckcode()>>"+messageBean.getAckcode());
-                    if(messageBean.getAckcode()==10){
-                            Client.getInstance().onSuccess(messageBean.getAckcode(),messageBean.getAction());
+                    if(messageBean.getResult().getCode()==1){
+                            Client.getInstance().onSuccess(1,messageBean.getAction());
                         }else{
-                            Client.getInstance().onFaliure(messageBean.getAckcode());
+                            Client.getInstance().onFaliure(0);
                         }
 
                     break;
